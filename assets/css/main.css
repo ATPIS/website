@@ -2890,3 +2890,17 @@ section,
   color: var(--contrast-color);
   background-color: rgba(var(--accent-color-rgb), 0.8);
 }
+
+@media (min-width: 576px) {
+  /* Hide HR on screens larger than small */
+  .hide-on-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  /* Hide HR on screens larger than small */
+  .show-on-sm {
+    display: block;
+  }
+}

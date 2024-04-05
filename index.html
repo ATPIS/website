@@ -19,8 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
@@ -28,14 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -54,11 +46,13 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Groups</a></li>
+          <li><a href="#features">ATPIS Jr.</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#team">The Committee</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
           <!-- <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
@@ -83,7 +77,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="https://www.bit.ly/join-atpis" target="_blank">Join the club!</a>
+      <a class="btn-getstarted" href="https://www.bit.ly/join-atpis" target="_blank">Register</a>
 
     </div>
   </header><!-- End Header -->
@@ -91,9 +85,9 @@
   <main id="main">
 
     <!-- Hero Section - Home Page -->
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
 
-      <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaUabJvTqcuvSGxOqEoEp48IW1d0ddDu6l29_WhSNz0UEHCXXmtDlraiSFaLZJM8vi0RLzOsQtdODPn15FLYekWZOM_i57-FKY=w3246-h1876-rw-v1" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -158,11 +152,13 @@
             <h2>SSCC Kfarhbab's First Student Club</h2>
             <p>ATPIS is a student-based and student-led organization comprising students from the secondary classes of Collège des Saints Cœurs Kfarhbab. Its mission is to support projects initiated by one or more club members in scientific, computer, technical, and related subjects, operating on a voluntary basis.</p>
             <a href="assets/Statuts ATPIS - Finale.pdf" target="_blank" class="read-more mb-5"><span>Check our bylaws</span><i class="bi bi-arrow-right"></i></a>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="504" class="embed-responsive-item" height="284" src="https://www.youtube.com/embed/MKDbvt5rJog?si=I6XrAISQOTPk0eRh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/MKDbvt5rJog?si=I6XrAISQOTPk0eRh" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
             </div>
+            <p class="mt-3 mb-2 opacity-75">Introductory Video</p>
           </div>
-
+          <hr class="hide-on-sm">
+          <br><br>
           <div class="col-xl-7">
             <div class="row gy-4 icon-boxes">
 
@@ -182,7 +178,7 @@
                 </div>
               </div> <!-- End Icon Box -->
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-md-6 show-on-sm" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
                   <i class="bi bi-people"></i>
                   <h3>Collaborative Environment</h3>
@@ -225,14 +221,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
+              <p>Projects till now</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-              <p>First Student Club</p>
+              <p>First Ever Student Club in SSCC Kfarhbab</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -266,7 +262,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="ri-flask-line"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">The Chemistry Group</a></h4>
+                <h4 class="title"><a href="" class="stretched-link">The Chemistry Group</a></h4>
                 <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
               </div>
             </div>
@@ -277,7 +273,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-calculator"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">The Math & Physics Group</a></h4>
+                <h4 class="title"><a href="" class="stretched-link">The Math & Physics Group</a></h4>
                 <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
               </div>
             </div>
@@ -287,7 +283,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">The Biology & Ecology Group</a></h4>
+                <h4 class="title"><a href="" class="stretched-link">The Biology & Ecology Group</a></h4>
                 <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
               </div>
             </div>
@@ -297,7 +293,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">The Computer Science, Electronics & Robotics Group</a></h4>
+                <h4 class="title"><a href="" class="stretched-link">The Computer Science, Electronics & Robotics Group</a></h4>
                 <p class="description">The Computer Science, Electronics & Robotics Group dives into the realm of coding, circuitry, and automation, igniting creativity and innovation in software development and robotics projects</p>
               </div>
             </div>
@@ -334,7 +330,7 @@
 
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>ATPIS Junior</h2>
+        <h2>ATPIS & ATPIS Jr</h2>
         <p>ATPIS is open to students ranging from 13 to 18, bringing together a diverse community passionate about technology and science.</p>
       </div><!-- End Section Title -->
 
@@ -345,7 +341,7 @@
             <h3>Per Aspera Ad Astra</h3>
             <p>
               Members of ATPIS's main branch have the opportunity to engage in world-class competitions, take on leadership roles within the club, and develop invaluable skills essential for personal and academic growth.</p>
-            <a href="#" class="btn btn-get-started">Get Started</a>
+            <!-- <a href="#" class="btn btn-get-started">Get Started</a> -->
           </div>
           <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <div class="image-stack">
@@ -367,7 +363,7 @@
               <li><i class="bi bi-check"></i><span> Provide mentorship programs where older students or volunteers can guide and support middle school members, helping them develop skills, confidence, and a passion for learning in a supportive environment.</span></li>
               <li><i class="bi bi-check"></i> <span>Encourage middle school students to explore different aspects of science and technology through competitions and interactive sessions, promoting critical thinking, creativity, and problem-solving skills.</span></li>
             </ul>
-            <a href="#" class="btn btn-get-started align-self-start">Get Started</a>
+            <!-- <a href="#" class="btn btn-get-started align-self-start">Get Started</a> -->
           </div>
         </div><!-- Features Item -->
 
@@ -380,7 +376,7 @@
 
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2>Activities</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -390,100 +386,101 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
+            <li data-filter=".filter-A">Chemistry</li>
+            <li data-filter=".filter-B">Math & Physics</li>
+            <li data-filter=".filter-C">Bio & Eco</li>
+            <li data-filter=".filter-D">Software</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-B">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Selections: Questions pour un Champion</h4>
+                <p>26 Janvier 2024</p>
+                <a href="assets/img/portfolio/portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 1</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 2</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>App 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Product 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Branding 3</h4>
                 <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="assets/img/portfolio/portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -495,81 +492,13 @@
 
     </section><!-- End Portfolio Section -->
 
-    <!-- Faq Section - Home Page -->
-    <section id="faq" class="faq">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="content px-xl-5">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Find quick answers to common queries and gain valuable insights into our group and activities.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>What is the main goal of the student club?</span></h3>
-                <div class="faq-content">
-                  <p>Our main goal is to promote interest in sciences through practical activities, research projects, scientific competitions, and conferences with experts.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">2.</span> <span> What are the benefits of joining the club?</span></h3>
-                <div class="faq-content">
-                  <p>The club provides a vibrant social environment where members interact, collaborate, and form lasting friendships with peers, fostering a supportive community beyond the classroom. Active participation in club activities, such as competitions, workshops, and projects, enriches a student's resume, showcasing their dedication to scientific exploration, teamwork skills, and leadership potential, which are highly valued by academic institutions.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">3.</span> <span>How does ATPIS plan to support the sustainability of its activities for future years?</span></h3>
-                <div class="faq-content">
-                  <p>We rely on active participation from its current and future members, as well as developing partnerships with experts, sponsors, and institutions to ensure ongoing resources and support. Additionally, the creation of the ATPIS Jr. branch aims to ensure the club's renewal and growth over the years.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">4.</span> <span>What opportunities are available to the club members in terms of practical activities and scientific competitions?</span></h3>
-                <div class="faq-content">
-                  <p>ATPIS club members have access to practical workshops where they can conduct scientific experiments, research projects to explore topics of interest, and they have the opportunity to participate in local, national, and international scientific competitions to apply their scientific knowledge and skills.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">5.</span> <span>How does the club encourage collaboration and exchange of ideas among its members?</span></h3>
-                <div class="faq-content">
-                  <p>We try to foster collaboration and information exchange among members of different grades by organizing mixed-grade teams for research projects, competitions, and workshops. This approach encourages peer learning, cross-grade mentorship, and the sharing of diverse perspectives and experiences, creating a dynamic and inclusive environment that enhances overall learning.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- End Faq Section -->
-
     <!-- Team Section - Home Page -->
     <section id="team" class="team">
 
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>The Administrative Committee</h2>
+        <p>«For the routine exercise of the club's responsibilities, the powers of the General Assembly are delegated to a smaller body called the Administrative Committee» ~Article 7 §1</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -578,34 +507,34 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/team.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
               <h4>Mrs. Nathalie Souaid</h4>
-              <span>Mentor</span>
+              <span>Co-Founder & Mentor</span>
               <p>Guides and supports members, providing valuable insights and mentorship in their academic and personal growth.</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/team.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
               <h4>Joe Ghadieh</h4>
-              <span>President</span>
+              <span>Co-Founder, President & Team-Leader B</span>
               <p>Leads the organization, sets goals, and oversees overall operations to ensure the club's success and mission fulfillment.</p>
             </div>
           </div><!-- End Team Member -->
@@ -614,49 +543,49 @@
             <div class="member-img">
               <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
                 <a href="https://instagram.com/marczeenny"><i class="bi bi-instagram"></i></a>
                 <a href="https://linkedin.com/in/marczeenny/"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>MNZ</h4>
-              <span>Vice-President</span>
+              <h4>Marc Nadim Zeenny</h4>
+              <span>Founding Member, Vice-President & Team-Leader D</span>
               <p>Develops and execute strategic initiatives, leads in the president's absence, and collaborates with team leaders to drive innovation and growth</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/team.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
               <h4>Clara Maria Khoury</h4>
-              <span>Team-Leader</span>
+              <span>Founding Member & Team-Leader A</span>
               <p>Coordinates and manages ATPIS-A group and their projects within the club, fostering teamwork and achieving set objectives.</p>
             </div>
           </div><!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
             <div class="member-img">
-              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/team.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
               <h4>Christelle Abdel Massih</h4>
-              <span>Team-Leader</span>
+              <span>Team-Leader C</span>
               <p>Coordinates and manages ATPIS-C group and their projects within the club, fostering teamwork and achieving set objectives.</p>
             </div>
           </div><!-- End Team Member -->
@@ -665,49 +594,49 @@
             <div class="member-img">
               <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
               <h4>Karl Mchayleh</h4>
-              <span>Treasurer</span>
+              <span>Founding Member & Treasurer</span>
               <p>Manages finances, budgets, and financial transactions, ensuring transparency and accountability in financial matters.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
             <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/team.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
               <h4>Theresia Hanna</h4>
-              <span>Secretary</span>
+              <span>Founding Member & Secretary</span>
               <p>Handles administrative tasks, maintains records, and assists in organizing club meetings and events for efficient operations.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
             <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/team.jpg" class="img-fluid" alt="">
               <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a><i class="bi bi-twitter"></i></a>
+                <a><i class="bi bi-facebook"></i></a>
+                <a><i class="bi bi-instagram"></i></a>
+                <a><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
             <div class="member-info text-center">
               <h4>Clara Anais Abdo</h4>
-              <span>Chair of the Media Committee</span>
+              <span>Founding Member & Chair of the Media Committee</span>
               <p>Manages communication channels, disseminates information, and promotes engagement within the club and with external stakeholders.</p>
             </div>
           </div>
@@ -727,11 +656,11 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Join the Club</h3>
+              <h3>Apply to the club</h3>
               <p>Join us to ignite your passion for science and technology and embark on a journey of exploration and discovery by completing the form linked below.
                 After submitting this form, we will contact you to schedule a brief 5-minute audition. 
                 We look forward to welcoming everyone to ATPIS!</p>
-              <a class="cta-btn" href="https://www.bit.ly/join-atpis">Register!</a>
+              <a class="cta-btn" href="https://www.bit.ly/join-atpis" target="_blank">Apply!</a>
             </div>
           </div>
         </div>
@@ -982,6 +911,74 @@
 
     </section> End Recent-posts Section -->
 
+    <!-- Faq Section - Home Page -->
+    <section id="faq" class="faq">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Find quick answers to common queries and gain valuable insights into our group and activities.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>What is the main goal of the student club?</span></h3>
+                <div class="faq-content">
+                  <p>Our main goal is to promote interest in sciences through practical activities, research projects, scientific competitions, and conferences with experts.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span> What are the benefits of joining the club?</span></h3>
+                <div class="faq-content">
+                  <p>The club provides a vibrant social environment where members interact, collaborate, and form lasting friendships with peers, fostering a supportive community beyond the classroom. Active participation in club activities, such as competitions, workshops, and projects, enriches a student's resume, showcasing their dedication to scientific exploration, teamwork skills, and leadership potential, which are highly valued by academic institutions.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>How does ATPIS plan to support the sustainability of its activities for future years?</span></h3>
+                <div class="faq-content">
+                  <p>We rely on active participation from its current and future members, as well as developing partnerships with experts, sponsors, and institutions to ensure ongoing resources and support. Additionally, the creation of the ATPIS Jr. branch aims to ensure the club's renewal and growth over the years.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>What opportunities are available to the club members in terms of practical activities and scientific competitions?</span></h3>
+                <div class="faq-content">
+                  <p>ATPIS club members have access to practical workshops where they can conduct scientific experiments, research projects to explore topics of interest, and they have the opportunity to participate in local, national, and international scientific competitions to apply their scientific knowledge and skills.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>How does the club encourage collaboration and exchange of ideas among its members?</span></h3>
+                <div class="faq-content">
+                  <p>We try to foster collaboration and information exchange among members of different grades by organizing mixed-grade teams for research projects, competitions, and workshops. This approach encourages peer learning, cross-grade mentorship, and the sharing of diverse perspectives and experiences, creating a dynamic and inclusive environment that enhances overall learning.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Faq Section -->
+    
     <!-- Contact Section - Home Page -->
     <section id="contact" class="contact">
 
@@ -1083,7 +1080,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="#" class="logo d-flex align-items-center">
             <span>ATPIS</span>
           </a>
           <p>Les Ateliers de Travaux Pratiques Informatiques et Scientifiques SSCC Kfarhbab</p>
@@ -1150,7 +1147,7 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
