@@ -1,6 +1,8 @@
-Thanks for downloading this template!
+Les Ateliers de Travaux Pratiques Informatiques et Scientifiques
+- ATPIS - Official Webpage
+Domain: atpis.me / atpis.github.io/website
 
-Template Name: Append
-Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+ATPIS - SSCC Kfarhbab Student Club
+
+Maintained by the Media Committee
+Designed by the Computer Science Group
