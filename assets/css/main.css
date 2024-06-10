@@ -641,26 +641,26 @@ section {
   border-radius: 50%;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
   position: absolute;
-  left: 50%;
+  left: 43%;
 }
 
 #preloader div:nth-child(1) {
-  left: calc(50% + 8px);
+  left: calc(43% + 8px);
   animation: animate-preloader-1 0.6s infinite;
 }
 
 #preloader div:nth-child(2) {
-  left: calc(50% + 8px);
+  left: calc(43% + 8px);
   animation: animate-preloader-2 0.6s infinite;
 }
 
 #preloader div:nth-child(3) {
-  left: calc(50% + 32px);
+  left: calc(43% + 32px);
   animation: animate-preloader-2 0.6s infinite;
 }
 
 #preloader div:nth-child(4) {
-  left: calc(50% + 56px);
+  left: calc(43% + 56px);
   animation: animate-preloader-3 0.6s infinite;
 }
 
