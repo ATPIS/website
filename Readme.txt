@@ -4,5 +4,4 @@ Domain: atpis.me / atpis.github.io/website
 
 ATPIS - SSCC Kfarhbab Student Club
 
-Maintained by the Media Committee
-Designed by the Computer Science Group
+Maintained by the Software, Electronics & Robotics Group
